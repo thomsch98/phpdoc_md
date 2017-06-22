@@ -1,13 +1,20 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+for ($dir = __DIR__; ; $dir = dirname($dir)) {
+    if (empty($dir)) {
+        die("No composer 'vendor/autoload.php' found.");
+    }
+    if (file_exists($dir . '/vendor/autoload.php')) {
+        require_once $dir . '/vendor/autoload.php';
+    }
+}
 
 $script = basename(__FILE__);
 $optend = -1;
 $options = getopt('n:s:t:h', ['help'], $optend);
-if ($options == false 
-    || isset($options['h']) 
+if ($options == false
+    || isset($options['h'])
     || isset($options['help'])
     || empty($options['n'])
     || empty($options['s'])
@@ -25,9 +32,9 @@ EOT;
     exit(0);
 }
 
-$namespace  = $options['n'];
-$srcDir     = $options['s'];
-$tgtDir     = $options['t'];
+$namespace = $options['n'];
+$srcDir = $options['s'];
+$tgtDir = $options['t'];
 
-(new \alphayax\mdGen\MdGen( $srcDir, $namespace))
+(new \alphayax\mdGen\MdGen($srcDir, $namespace))
     ->generate($tgtDir);

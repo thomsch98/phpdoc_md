@@ -7,6 +7,7 @@ for ($dir = __DIR__; ; $dir = dirname($dir)) {
     }
     if (file_exists($dir . '/vendor/autoload.php')) {
         require_once $dir . '/vendor/autoload.php';
+        break;
     }
 }
 

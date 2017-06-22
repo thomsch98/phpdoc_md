@@ -5,26 +5,21 @@
 
 # Overview
 
-- [NamespaceMd](__NAMESPACE__.md#NamespaceMd)
-- [ClassMd](__NAMESPACE__.md#ClassMd)
 - [MethodMd](__NAMESPACE__.md#MethodMd)
+- [ClassMd](__NAMESPACE__.md#ClassMd)
+- [NamespaceMd](__NAMESPACE__.md#NamespaceMd)
 
 
 ---
-<a name="NamespaceMd"></a>
-## NamespaceMd
+<a name="MethodMd"></a>
+## MethodMd
 
-**Class**  : alphayax\mdGen\models\NamespaceMd
+**Class**  : alphayax\mdGen\models\MethodMd
 
 ### Public methods
 
 | Method | Description |
 |---|---|
-| `generateTree` | Generate overview markdown tree |
-| `write` | Write markdown file |
-| `writeSubPages` | Write sub pages of this page |
-| `setDirectory` | Define the current page directory |
-| `getPageBfe` | Return the page basename file with extension |
 | `offsetExists` | Whether a offset exists |
 | `offsetGet` | Offset to retrieve |
 | `offsetSet` | Offset to set |
@@ -48,15 +43,20 @@
 | `offsetSet` | Offset to set |
 | `offsetUnset` | Offset to unset |
 
-<a name="MethodMd"></a>
-## MethodMd
+<a name="NamespaceMd"></a>
+## NamespaceMd
 
-**Class**  : alphayax\mdGen\models\MethodMd
+**Class**  : alphayax\mdGen\models\NamespaceMd
 
 ### Public methods
 
 | Method | Description |
 |---|---|
+| `generateTree` | Generate overview markdown tree |
+| `write` | Write markdown file |
+| `writeSubPages` | Write sub pages of this page |
+| `setDirectory` | Define the current page directory |
+| `getPageBfe` | Return the page basename file with extension |
 | `offsetExists` | Whether a offset exists |
 | `offsetGet` | Offset to retrieve |
 | `offsetSet` | Offset to set |

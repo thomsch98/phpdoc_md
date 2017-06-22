@@ -37,16 +37,8 @@ $gen = new \alphayax\mdGen\MdGen( $srcDir, $namespace);
 $gen->generate( 'md_gen');
 ```
 
-## Documentation 
+## Documentation
 
-The documentation is auto-generated with this sources :)
+The [documentation](docs/__NAMESPACE__.md) was auto-generated with the command
 
-- [models](docs/models/__NAMESPACE__.md)
-    - [NamespaceMd](docs/models/__NAMESPACE__.md#NamespaceMd)
-    - [ClassMd](docs/models/__NAMESPACE__.md#ClassMd)
-    - [MethodMd](docs/models/__NAMESPACE__.md#MethodMd)
-- [utils](docs/utils/__NAMESPACE__.md)
-    - [arrayAccessProperties](docs/utils/__NAMESPACE__.md#arrayAccessProperties)
-- [MdGen](docs/__NAMESPACE__.md#MdGen)
-
-
+    ./bin/gendoc.php -n alphayax -s src -t docs

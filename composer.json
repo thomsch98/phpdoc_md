@@ -25,6 +25,7 @@
       "alphayax\\mdGen\\": "./src"
     }
   },
+  "bin":["bin/gendoc.php"],
   "support": {
     "issues": "https://github.com/alphayax/phpdoc_md/issues"
   }
